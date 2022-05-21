@@ -60,7 +60,7 @@ main {
     background-color: white;  
     display: flex;
     flex-direction: column;  
-    
+    z-index: 99;
 }
 main .info .details{
     width: 300px;
@@ -92,7 +92,12 @@ footer {
     background-color: aqua;
 }
 
-
+#map{
+    height: 100%;
+    width: 100%;
+    border: 1px solid ;
+    z-index: 1;
+}
 /*desktop*/
 
 @media (min-width: 768px) {
