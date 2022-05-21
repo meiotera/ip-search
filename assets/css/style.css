@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../images/pattern-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+}
+header h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+}
+header form {
+    display: flex;
+    padding-top: 30px;
+    width: 100%;
+}
+
+header form input {
+    width: 100%;
+    padding: 18px;
+    border-radius: 10px 0 0 10px ;
+    border: none;
+    font-size: 1rem;
+}
+header form button {
+    background-color: black;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    background-color: aqua;
+}
+.info {
+    position: absolute;
+    border-radius: 10px;
+    margin-top: -150px;    
+    background-color: white;  
+    display: flex;
+    flex-direction: column;  
+    
+}
+main .info .details{
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: center;   
+    
+}
+
+main .info .details span {
+    color:  hsl(0, 0%, 59%);
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer {
+    height: 10vh;
+    background-color: aqua;
+}
+
+
+/*desktop*/
+
+@media (min-width: 768px) {
+    .info{
+        flex-direction: row;
+        height: 180px;
+        margin-top: -80px; 
+    }
+    main .info .details{
+        justify-content: start;   
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+}
