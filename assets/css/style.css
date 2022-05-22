@@ -20,7 +20,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 40vh;
+    height: 30vh;
 }
 header h1 {
     font-size: 2rem;
@@ -52,12 +52,11 @@ main {
     position: relative;
     display: flex;
     justify-content: center;
-    height: 55vh;
+    height: 65vh;
     background-color: rgba(0, 255, 255, 0.267);
 }
 .info {
-    position: absolute;
-    height: 80%;
+    position: absolute;  
     border-radius: 10px;
     position: absolute;
     margin-top: -70px;
