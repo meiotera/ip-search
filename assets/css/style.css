@@ -29,6 +29,7 @@ header h1 {
 }
 header .search {
     display: flex;
+    justify-content: center;
     padding-top: 30px;
     width: 100%;
 }
@@ -48,18 +49,20 @@ header .search button {
 }
 
 main {
+    position: relative;
     display: flex;
     justify-content: center;
-    height: 50vh;
-    background-color: aqua;
+    height: 55vh;
+    background-color: rgba(0, 255, 255, 0.267);
 }
 .info {
     position: absolute;
     border-radius: 10px;
-    margin-top: -150px;    
+    position: absolute;
+    margin-top: -120px;
     background-color: white;  
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;      
     z-index: 99;
 }
 main .info .details{
@@ -88,14 +91,17 @@ main .info .details span {
 }
 
 footer {
-    height: 10vh;
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    height: 5vh;
+    background-color: rgba(0, 255, 255, 0.267);
 }
 
 #map{
     height: 100%;
-    width: 100%;
-    border: 1px solid ;
+    width: 100%;    
     z-index: 1;
 }
 /*desktop*/
@@ -103,12 +109,27 @@ footer {
 @media (min-width: 768px) {
     .info{
         flex-direction: row;
-        height: 180px;
+        height: 150px;
         margin-top: -80px; 
+        max-width: 80%;
+        
     }
     main .info .details{
-        justify-content: start;   
+        display: block;        
         padding-left: 20px;
         padding-top: 20px;
+        height: 100%;
+        border-right: 1px solid hsla(0, 0%, 59%, 0.123);
+        
+    }
+    main .info .details span {
+        padding: 0;
+    }
+    main .info .details:last-child {
+        border: none;
+    }
+    header .search input {
+        
+        width: 60%;
     }
 }
